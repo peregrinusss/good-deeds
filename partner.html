@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Добрые дела</title>
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+  <body class="page__body">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="#" class="header__logo">
+        <img
+        src="img/logo.svg"
+        alt="Нижний"
+        width="162"
+        height="45"
+      />
+      </a>
+
+      <nav class="nav" data-menu="">
+        <div class="container nav-container">
+          <ul class="nav__list list-reset">
+            <li
+              class="nav__item menu-item menu-item-type-custom menu-item-object-custom"
+            >
+              <a href="#" class="nav__link">О проекте</a>
+              <div class="header-nav__arrow"></div>
+            </li>
+            <li
+              class="nav__item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+            >
+              <span class="nav__link">Направления</span>
+              <div class="header-nav__arrow"></div>
+              <ul class="sub-menu nav__submenu">
+                <li
+                  class="menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="#" class="nav__link">Волонтёры</a>
+                  <div class="header-nav__arrow"></div>
+                </li>
+                <li
+                  class="menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="#" class="nav__link">Креатив</a>
+                  <div class="header-nav__arrow"></div>
+                </li>
+                <li
+                  class="menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="#" class="nav__link">Гранты</a>
+                  <div class="header-nav__arrow"></div>
+                </li>
+                <li
+                  class="menu-item-type-post_type menu-item-object-page"
+                >
+                  <a href="#" class="nav__link">Спорт</a>
+                  <div class="header-nav__arrow"></div>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="nav__item menu-item menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="#" class="nav__link">Мероприятия</a>
+              <div class="header-nav__arrow"></div>
+            </li>
+            <li
+            class="nav__item menu-item menu-item-type-post_type menu-item-object-page"
+          >
+            <a href="#" class="nav__link">В фокусе</a>
+            <div class="header-nav__arrow"></div>
+          </li>
+          <li
+          class="nav__item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+        >
+          <span class="nav__link">День молодежи</span>
+          <div class="header-nav__arrow"></div>
+          <ul class="sub-menu nav__submenu">
+            <li
+              class="menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="#" class="nav__link">Волонтёры</a>
+              <div class="header-nav__arrow"></div>
+            </li>
+            <li
+              class="menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="#" class="nav__link">Креатив</a>
+              <div class="header-nav__arrow"></div>
+            </li>
+            <li
+              class="menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="#" class="nav__link">Гранты</a>
+              <div class="header-nav__arrow"></div>
+            </li>
+            <li
+              class="menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="#" class="nav__link">Спорт</a>
+              <div class="header-nav__arrow"></div>
+            </li>
+          </ul>
+        </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="header__wrap">
+        <button class="header__enter">
+          <svg>
+            <use xlink:href="img/sprite.svg#avatar"></use>
+          </svg>
+          <span>войти</span>
+        </button>
+        <button
+          class="burger btn-reset"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          data-burger=""
+        >
+          <div class="burger-icon">
+            <span></span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <div class="breadcrumbs">
+        <div class="container breadcrumbs__container">
+          <div class="breadcrumbs__list list-reset">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#" itemprop="url">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#" itemprop="url"
+                >Добрые дела</a
+              >
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#" itemprop="url"
+                >Фонды-партнёры</a
+              >
+            </li>
+          </div>
+          <a class="base-back__link" href="#">
+            <svg
+              width="17"
+              height="16"
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.46922 14.8723C5.6088 14 4.74762 13.1292 3.8857 12.2599C2.86338 11.2251 1.84518 10.1862 0.818561 9.15802C0.718228 9.07301 0.638114 8.95549 0.586825 8.81809C0.535536 8.68069 0.515012 8.5286 0.527456 8.37817C0.530413 8.32389 0.53099 8.26942 0.529183 8.21503C0.516409 8.04593 0.548396 7.8766 0.620209 7.73319C0.692021 7.58978 0.799664 7.48026 0.926512 7.42154C2.41933 6.5491 3.90916 5.66678 5.40048 4.7894C6.84717 3.93804 8.29448 3.08675 9.74242 2.23556C9.82779 2.18652 9.92215 2.16683 10.0159 2.1785C10.1096 2.19016 10.1993 2.23276 10.2759 2.30194C10.3524 2.37113 10.4131 2.46442 10.4516 2.57229C10.4902 2.68016 10.5053 2.79875 10.4953 2.91595C10.4846 3.02754 10.4515 3.13375 10.3991 3.22468C10.3466 3.3156 10.2766 3.38828 10.1955 3.43595L2.40547 8.01992C2.19907 8.14158 1.99266 8.26323 1.76829 8.3967C1.823 8.45727 1.86182 8.50387 1.90475 8.54629L3.81592 10.476L6.58593 13.2862C6.78195 13.4827 6.97817 13.677 7.17195 13.878C7.25065 13.9541 7.31096 14.056 7.34607 14.1724C7.38118 14.2888 7.3897 14.4149 7.37067 14.5367C7.3563 14.6505 7.31698 14.7568 7.25708 14.844C7.19718 14.9311 7.11906 14.9955 7.03141 15.0301C6.93535 15.0696 6.83241 15.0757 6.73346 15.048C6.63451 15.0202 6.54321 14.9595 6.46922 14.8723Z"
+                fill="#808080"
+              ></path>
+              <rect
+                width="16"
+                height="1"
+                rx="0.5"
+                transform="matrix(-1 0 0 1 17 8)"
+                fill="#808080"
+              ></rect>
+            </svg>
+            назад
+          </a>
+        </div>
+      </div>
+      <section class="partner">
+        <div class="container">
+          <div class="donate__head">
+            <h1 class="first-section__title partner__title">
+              Фонды-партнёры
+            </h1>
+            <span>
+              <p>Партнеры проекта «Добрые дела» − это благотворительные фонды и НКО, которые работают на территории Нижнего Новгорода и Нижегородской области.</p>
+              <p>Эти фонды оказывают разные виды помощи взрослым и детям, оказавшимся в трудной жизненной ситуации или нуждающимся в дорогостоящем лечении. Пожилым людям, которым требуется поддержка. Социально незащищенным людям, потерявшим жилье и работу. Детям и взрослым с ограниченными возможностями. Трудным подросткам из необеспеченных семей и многим другим. Бездомным животным. И даже городу, сохраняя его культурно-историческое наследие.</p>
+              <p>Все они − партнеры проекта «Добрые дела». Присоединяйтесь!</p>
+            </span>
+            <a href="#" class="btn-green donate__link partner__link" data-graph-path="fund-popup">
+              Хочу стать партнёром
+              <svg class="">
+                <use xlink:href="img/sprite.svg#arrow_right"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="partner__body">
+            <h2 class="section-title help__title">Все фонды-партнёры</h2>
+            <div class="partner__filters">
+              <div class="partner__filter active" data-filter="all">все </div>
+              <div class="partner__filter" data-filter="children">дети</div>
+              <div class="partner__filter" data-filter="teenagers">подростки</div>
+              <div class="partner__filter" data-filter="elderly">пожилые</div>
+              <div class="partner__filter" data-filter="hard">люди в трудной жизненной ситуации</div>
+              <div class="partner__filter" data-filter="animals">животные</div>
+              <div class="partner__filter" data-filter="heritage">культурно-историческое наследие</div>
+            </div>
+            <div class="partner__cards">
+              <div class="partner__card children">
+                <div class="partner__img">
+                  <picture>
+                    <source srcset="img/content/partner_1.webp" type="image/webp">
+                    <img loading="lazy" src="img/content/partner_1.png" alt="">
+                  </picture>
+                </div>
+                <h4 class="partner__title">МБОУ «Сообщество сумей слепоглухих» слепоглухих</h4>
+                <span class="partner__desc"><p>Поддерживают семьи, в которых проживают дети и взрослые с одновременным нарушением слуха и зрения </p></span>
+                <span class="partner__amount">
+                  Акций: <span>1</span>
+                </span>
+              </div>
+              <div class="partner__card elderly">
+                <div class="partner__img">
+                  <picture>
+                    <source srcset="img/content/partner_2.webp" type="image/webp">
+                    <img loading="lazy" src="img/content/partner_2.png" alt="">
+                  </picture>
+                </div>
+                <h4 class="partner__title">НРООИ «Инвантур» </h4>
+                <span class="partner__desc"><p>Нижегородская региональная общественная организация культурно, социально-трудовой реабилитации инвалидов и колясочников</p></span>
+                <span class="partner__amount">
+                  Акций: <span>1</span>
+                </span>
+              </div>
+              <div class="partner__card hard">
+                <div class="partner__img">
+                  <picture>
+                    <source srcset="img/content/partner_3.webp" type="image/webp">
+                    <img loading="lazy" src="img/content/partner_3.png" alt="">
+                  </picture>
+                </div>
+                <h4 class="partner__title">НООО «Сияние» </h4>
+                <span class="partner__desc"><p>Нижегородская областная общественная организация инвалидов «Инновационный центр: в XXI век с 21 хромосомой „Сияние“</p></span>
+                <span class="partner__amount">
+                  Акций: <span>1</span>
+                </span>
+              </div>
+              <div class="partner__card animals">
+                <div class="partner__img">
+                  <picture>
+                    <source srcset="img/content/partner_1.webp" type="image/webp">
+                    <img loading="lazy" src="img/content/partner_1.png" alt="">
+                  </picture>
+                </div>
+                <h4 class="partner__title">МБОУ «Сообщество сумей слепоглухих» слепоглухих</h4>
+                <span class="partner__desc"><p>Поддерживают семьи, в которых проживают дети и взрослые с одновременным нарушением слуха и зрения </p></span>
+                <span class="partner__amount">
+                  Акций: <span>1</span>
+                </span>
+              </div>
+              <div class="partner__card heritage">
+                <div class="partner__img">
+                  <picture>
+                    <source srcset="img/content/partner_2.webp" type="image/webp">
+                    <img loading="lazy" src="img/content/partner_2.png" alt="">
+                  </picture>
+                </div>
+                <h4 class="partner__title">НРООИ «Инвантур» </h4>
+                <span class="partner__desc"><p>Нижегородская региональная общественная организация культурно, социально-трудовой реабилитации инвалидов и колясочников</p></span>
+                <span class="partner__amount">
+                  Акций: <span>1</span>
+                </span>
+              </div>
+              <div class="partner__card animals">
+                <div class="partner__img">
+                  <picture>
+                    <source srcset="img/content/partner_3.webp" type="image/webp">
+                    <img loading="lazy" src="img/content/partner_3.png" alt="">
+                  </picture>
+                </div>
+                <h4 class="partner__title">НООО «Сияние» </h4>
+                <span class="partner__desc"><p>Нижегородская областная общественная организация инвалидов «Инновационный центр: в XXI век с 21 хромосомой „Сияние“</p></span>
+                <span class="partner__amount">
+                  Акций: <span>1</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="popup-cropp">
+      <div class="graph-modal__container">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+          <div class="modal-header">
+            <h3 class="title-h3 donate__title modal-title" id="imageModal">
+              Выберите миниатюру
+            </h3>
+          </div>
+          <div class="modal-body modal-body1 border-bottom">
+            <div id="croppieContainer"></div>
+          </div>
+          <div class="modal-footer">
+            <button class="content-block-more cropp-cancel btn btn-secondary crop-destroy" data-dismiss="modal">
+              <span>Отменить</span>
+            </button>
+            <button type="button" id="cropBtn" class="content-block-more btn btn-primary save-modal">
+              <span>Сохранить</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="graph-modal">
+      <div class="graph-modal__container fund-popup" role="dialog" aria-modal="true" data-graph-target="fund-popup">
+  <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+  <div class="graph-modal__content">
+    <h3 class="title-h3 popup__title">
+      Анкета фонда
+    </h3>
+    <div class="fund-popup__body">
+      <form id="fund-form">
+        <div class="popup__item">
+          <h4 class="popup-h4">Информация об авторе</h4>
+          <div class="popup__input popup-first">
+            <input type="text" name="fund_name" placeholder="Название организации">
+          </div>
+          <div class="popup__textarea">
+            <textarea type="text" name="fund_desc" placeholder="Описание фонда"></textarea>
+          </div>
+          <div class="fund-popup-ava info__cover_upload info__cover_upload_ava input-file-ava">
+            <h5 class="fund-popup-ava__title">Логотип фонда</h5>
+            <div class="fund-popup-ava__wrap">
+              <div class="upload__area js-upload-widget" data-size="5">
+                <img class="upload__area_img" src="img/icons/upload.svg" alt="">
+                <span class="upload__area_text">
+                  Перетащите фото в это поле иливыберите файл
+                  с вашего компьютера
+                </span>
+                <div class="inner-div js-upload-widget-button" style="
+                    position: relative;
+                    overflow: hidden;
+                    direction: ltr;
+                  ">
+                  <input title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg" name="reg_file" style="
+                      position: absolute;
+                      right: 0px;
+                      top: 0px;
+                      font-family: Arial;
+                      font-size: 118px;
+                      margin: 0px;
+                      padding: 0px;
+                      cursor: pointer;
+                      opacity: 0;
+                      height: 100%;
+                    ">
+                </div>
+                <div class="image-box image-preview js-upload-widget-preview" style="background-image: url()"></div>
+              </div>
+              <div class="fund-popup-ava__text">
+                <p>Желательный размер не более 200×200 px, не более 1 Мб.</p>
+                <p>Допустимые форматы изображения: JPG, GIF, PNG.</p>
+                <p>Важно! На фото не должно быть надписей и водяных знаков.</p>
+              </div>
+            </div>
+          </div>
+          <div class="popup__input">
+            <input type="text" name="fund_aim" placeholder="Цель фонда">
+          </div>
+          <div class="popup__input">
+            <input type="text" name="fund_city" placeholder="Город">
+          </div>
+          <div class="popup__input">
+            <input type="text" name="fund_address" placeholder="Фактический адрес организации">
+          </div>
+        </div>
+        <div class="popup__item">
+          <h4 class="popup-h4">Категория помощи</h4>
+          <div class="categories-box" id="col_filter">
+            <div class="categories-box__item">
+                <input type="radio" name="col_filter" checked id="filter-1" value="1">
+                <label for="filter-1">Сбор средств</label>
+            </div>
+            <div class="categories-box__item">
+                <input type="radio" name="col_filter" id="filter-2" value="2">
+                <label for="filter-2">Сбор вещей</label>
+            </div>
+            <div class="categories-box__item">
+                <input type="radio" name="col_filter" id="filter-3" value="3">
+                <label for="filter-3">Нематериальная помощь</label>
+            </div>
+        </div>
+        </div>
+        <div class="popup__item">
+          <h4 class="popup-h4">Контактное лицо</h4>
+          <div class="popup__input popup-first">
+            <input type="text" name="fund_FIO" placeholder="Имя, фамилия">
+          </div>
+          <div class="popup__grid">
+            <div class="popup__input popup-first">
+              <input type="text" name="fund_tel" placeholder="+7 (999) 999-99-99" id="fund-tel">
+            </div>
+            <div class="popup__input">
+              <input type="text" name="fund_org" placeholder="Название организации">
+            </div>
+          </div>
+        </div>
+        <div class="popup__item">
+          <h4 class="popup-h4">Ссылки на соц сети</h4>
+          <div class="popup__grid popup-first">
+            <div class="popup__input popup-first">
+              <input type="text" name="fund_vk" placeholder="VK">
+            </div>
+            <div class="popup__input">
+              <input type="text" name="fund_facebook" placeholder="Facebook">
+            </div>
+          </div>
+          <div class="popup__grid">
+            <div class="popup__input popup-first">
+              <input type="text" name="fund_insta" placeholder="Instagram">
+            </div>
+            <div class="popup__input">
+              <input type="text" name="fund_classmates" placeholder="Одноклассники">
+            </div>
+          </div>
+          <div class="popup__input">
+            <input type="text" name="fund_site" placeholder="Сайт организации">
+          </div>
+        </div>
+        <div class="popup__item">
+          <h4 class="popup-h4">Реквизиты</h4>
+          <div class="popup__input popup-first">
+            <input type="text" name="fund_INN" placeholder="ИНН">
+          </div>
+          <div class="popup__input">
+            <input type="text" name="fund_ur_address" placeholder="Юридический адрес">
+          </div>
+        </div>
+        <div class="popup__footer">
+          <div class="pp__check">
+            <div class="pp-check pp-check_c">
+              <div class="pp-check__checkbox">
+                <div class="check">
+                  <input class="styled-checkbox" id="agree1" value="" name="enter_checkbox1" type="checkbox">
+                  <label for="agree1"></label>
+                </div>
+              </div>
+              <div class="pp-check__text">
+                <span>
+                  <label for="agree1">
+                    Я согласен на обработку персональных данных в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ
+                  </label>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="pp__check">
+            <div class="pp-check pp-check_c">
+              <div class="pp-check__checkbox">
+                <div class="check">
+                  <input class="styled-checkbox" id="agree2" value="" name="enter_checkbox2" type="checkbox">
+                  <label for="agree2"></label>
+                </div>
+              </div>
+              <div class="pp-check__text">
+                <span>
+                  <label for="agree2">
+                    Я согласен с <a href="#">условиями размещения информации, изображений, объектов авторского права и иных результатов интеллектуальной деятельности</a>
+                  </label>
+                </span>
+              </div>
+            </div>
+          </div>
+          <button class="btn-green donate__link partner__link popup__btn">
+            Отправить
+            <svg class="">
+              <use xlink:href="img/sprite.svg#arrow_right"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+      <div class="graph-modal__container popup-success" role="dialog" aria-modal="true" data-graph-target="success">
+        <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content">
+          <div class="coll-success">
+            <h2>
+              Успешно
+              <svg class="">
+                <use xlink:href="img/sprite.svg#success"></use>
+              </svg>
+            </h2>
+            <span>Ваше обращение обрабатывается модератором</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__wrap">
+        <a href="#" class="footer__logo">
+          <img
+            src="img/logo.svg"
+            alt="Нижний"
+            width="162"
+            height="45"
+          />
+        </a>
+        <ul class="socials list-reset">
+          <li>
+            <a href="#" target="_blank" class="socials__link">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2178 23.1818C6.89975 23.1818 1.58498 17.0392 1.36353 6.81812H6.03106C6.18438 14.3202 9.62532 17.4979 12.3509 18.1531V6.81812H16.746V13.2882C19.4375 13.0098 22.265 10.0614 23.2189 6.81812H27.614C26.8815 10.8148 23.8152 13.7632 21.6348 14.9754C23.8152 15.9582 27.3075 18.5298 28.6363 23.1818H23.7982C22.7591 20.0695 20.17 17.6617 16.746 17.3341V23.1818H16.2178Z"
+                  fill="#8A94F3"
+                ></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="socials__link">
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.32092 14.2601C10.5437 11.3735 14.6932 9.4705 16.7695 8.55105C22.6975 5.92584 23.9293 5.46981 24.7322 5.45475C24.9087 5.45144 25.3036 5.49803 25.5593 5.71899C25.7753 5.90555 25.8347 6.15758 25.8631 6.33447C25.8915 6.51136 25.927 6.91431 25.8988 7.22917C25.5776 10.8229 24.1876 19.5439 23.4804 23.5689C23.1812 25.2721 22.592 25.8431 22.0216 25.899C20.782 26.0205 19.8407 25.0268 18.6401 24.1888C16.7613 22.8776 15.7 22.0614 13.8763 20.7819C11.7688 19.3032 13.135 18.4905 14.3361 17.1623C14.6504 16.8147 20.1122 11.5253 20.2179 11.0455C20.2311 10.9855 20.2434 10.7618 20.1186 10.6437C19.9937 10.5256 19.8095 10.566 19.6766 10.5981C19.4882 10.6436 16.4869 12.7557 10.6727 16.9344C9.8208 17.5573 9.04917 17.8607 8.35781 17.8448C7.59565 17.8273 6.12955 17.386 5.03965 17.0088C3.70286 16.5461 2.64039 16.3015 2.73291 15.5158C2.7811 15.1065 3.31044 14.688 4.32092 14.2601Z"
+                  fill="#8A94F3"
+                ></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="nav__list list-reset footer__nav">
+        <li
+          class="nav__item menu-item menu-item-type-custom menu-item-object-custom"
+        >
+          <a href="#" class="nav__link">О проекте</a>
+          <div class="header-nav__arrow"></div>
+        </li>
+        <li
+          class="nav__item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+        >
+          <span class="nav__link">Направления</span>
+          <div class="header-nav__arrow"></div>
+          <ul class="sub-menu nav__submenu">
+            <li
+              class="menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="#" class="nav__link">Волонтёры</a>
+              <div class="header-nav__arrow"></div>
+            </li>
+            <li
+              class="menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="#" class="nav__link">Креатив</a>
+              <div class="header-nav__arrow"></div>
+            </li>
+            <li
+              class="menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="#" class="nav__link">Гранты</a>
+              <div class="header-nav__arrow"></div>
+            </li>
+            <li
+              class="menu-item-type-post_type menu-item-object-page"
+            >
+              <a href="#" class="nav__link">Спорт</a>
+              <div class="header-nav__arrow"></div>
+            </li>
+          </ul>
+        </li>
+        <li
+          class="nav__item menu-item menu-item-type-post_type menu-item-object-page"
+        >
+          <a href="#" class="nav__link">Мероприятия</a>
+          <div class="header-nav__arrow"></div>
+        </li>
+        <li
+        class="nav__item menu-item menu-item-type-post_type menu-item-object-page"
+      >
+        <a href="#" class="nav__link">В фокусе</a>
+        <div class="header-nav__arrow"></div>
+      </li>
+      <li
+      class="nav__item menu-item-type-custom menu-item-object-custom menu-item-has-children"
+    >
+      <span class="nav__link">День молодежи</span>
+      <div class="header-nav__arrow"></div>
+      <ul class="sub-menu nav__submenu">
+        <li
+          class="menu-item-type-post_type menu-item-object-page"
+        >
+          <a href="#" class="nav__link">Волонтёры</a>
+          <div class="header-nav__arrow"></div>
+        </li>
+        <li
+          class="menu-item-type-post_type menu-item-object-page"
+        >
+          <a href="#" class="nav__link">Креатив</a>
+          <div class="header-nav__arrow"></div>
+        </li>
+        <li
+          class="menu-item-type-post_type menu-item-object-page"
+        >
+          <a href="#" class="nav__link">Гранты</a>
+          <div class="header-nav__arrow"></div>
+        </li>
+        <li
+          class="menu-item-type-post_type menu-item-object-page"
+        >
+          <a href="#" class="nav__link">Спорт</a>
+          <div class="header-nav__arrow"></div>
+        </li>
+      </ul>
+    </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__links">
+        <a href="#" class="footer__link">
+          <span>Оплата и возврат</span>
+        </a>
+        <a href="#" class="footer__link">
+          <span>Политика конфиденциальности</span>
+        </a>
+        <a href="#" class="footer__link">
+          <span>Пользовательское соглашение</span>
+        </a>
+      </div>
+      <div class="footer__copyright">
+        © Нижний Новгород. Молодёжная столица России 2023
+      </div>
+      <a
+        href="#"
+        class="footer__link footer__link--nounderline"
+      >
+        <span> Разработано OmniAgency</span>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
