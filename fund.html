@@ -216,7 +216,7 @@
                   <div class="fund-card__amount">
                     Всего собрано: <span>48 750 ₽</span>
                   </div>
-                  <button class="btn-green fund-card__btn">
+                  <button class="btn-green fund-card__btn" data-graph-path="donate-popup">
                     Хочу помочь фонду
                     <svg class="">
                       <use xlink:href="img/sprite.svg#arrow_right"></use>
@@ -695,6 +695,249 @@
 </section>
 
     </main>
+
+    <div class="graph-modal">
+      <div
+  class="graph-modal__container donate-popup"
+  role="dialog"
+  aria-modal="true"
+  data-graph-target="donate-popup"
+>
+  <button
+    class="btn-reset js-modal-close graph-modal__close"
+    aria-label="Закрыть модальное окно"
+  ></button>
+  <div class="graph-modal__content">
+    <h3 class="title-h3 popup__title">Пожертвование</h3>
+    <div class="donate-popup__body">
+      <form id="donate-form">
+        <div class="popup__item">
+          <h4 class="popup-h4">Тип платежа</h4>
+          <div class="categories-box donate-popup" id="col_filter">
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_filter"
+                checked
+                id="donate-1"
+                value="1"
+                class="donate-popup__checkbox"
+              />
+              <label for="donate-1">Разовый</label>
+            </div>
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_filter"
+                id="donate-2"
+                value="2"
+                class="donate-popup__checkbox"
+              />
+              <label for="donate-2">Ежемесячный</label>
+            </div>
+          </div>
+          <div class="donate-popup__month" style="display: none;">
+            Ежемесячное пожертвование раз в месяц списывается с банковской карты. В любой момент вы сможете отключить его
+          </div>
+        </div>
+        <div class="popup__item">
+          <h4 class="popup-h4">О вас</h4>
+          <div class="popup__input">
+            <input type="text" name="donate_emal" placeholder="Email" />
+          </div>
+          <div class="popup__input">
+            <input
+              type="text"
+              name="donate_name"
+              placeholder="Имя, фамилия, отчество"
+            />
+          </div>
+        </div>
+        <div class="popup__item">
+          <h4 class="popup-h4">Сумма пожертвования</h4>
+          <div class="donate-popup__amounts">
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_amount"
+                id="donate_amount1"
+                value="2"
+                checked
+                class="donate-popup__amount"
+              />
+              <label for="donate_amount1">100 ₽</label>
+            </div>
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_amount"
+                id="donate_amount2"
+                value="2"
+                class="donate-popup__amount"
+              />
+              <label for="donate_amount2">200 ₽</label>
+            </div>
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_amount"
+                id="donate_amount3"
+                value="2"
+                class="donate-popup__amount"
+              />
+              <label for="donate_amount3">500 ₽</label>
+            </div>
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_amount"
+                id="donate_amount4"
+                value="2"
+                class="donate-popup__amount"
+              />
+              <label for="donate_amount4">750 ₽</label>
+            </div>
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_amount"
+                id="donate_amount5"
+                value="2"
+                class="donate-popup__amount"
+              />
+              <label for="donate_amount5">1 000 ₽</label>
+            </div>
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_amount"
+                id="donate_amount6"
+                value="2"
+                class="donate-popup__amount"
+              />
+              <label for="donate_amount6">1 500 ₽</label>
+            </div>
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_amount"
+                id="donate_amount7"
+                value="2"
+                class="donate-popup__amount"
+              />
+              <label for="donate_amount7">2 000 ₽</label>
+            </div>
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_amount"
+                id="donate_amount8"
+                value="2"
+                class="donate-popup__amount"
+              />
+              <label for="donate_amount8">3000 ₽</label>
+            </div>
+            <div class="categories-box__item">
+              <input
+                type="radio"
+                name="donate_amount"
+                id="donate_amount9"
+                value="2"
+                class="donate-popup__amount"
+              />
+              <label for="donate_amount9">Другая сумма</label>
+            </div>
+          </div>
+          <div class="popup__input donate-popup__amount--other" style="display: none;">
+            <input
+              type="text"
+              name="donate_amount_other"
+              placeholder="Введите другую сумму"
+            />
+          </div>
+        </div>
+        <div class="donate-popup__way">
+          <span>Способ оплаты</span>
+          <div class="donate-popup__credits">
+            <div class="donate-popup__credit">
+              <img src="img/content/mastercard.svg" alt="MasterCard">
+            </div>
+            <div class="donate-popup__credit">
+              <img src="img/content/visa.svg" alt="Visa">
+            </div>
+            <div class="donate-popup__credit">
+              <img src="img/content/mir.svg" alt="Mir">
+            </div>
+          </div>
+        </div>
+        <div class="donate-popup__checkboxes">
+          <div class="pp__check">
+            <div class="pp-check pp-check_c">
+              <div class="pp-check__checkbox">
+                <div class="check">
+                  <input class="styled-checkbox" id="donate-agree1" value="" name="donate_checkbox1" type="checkbox">
+                  <label for="donate-agree1"></label>
+                </div>
+              </div>
+              <div class="pp-check__text">
+                <span>
+                  <label for="donate-agree1">
+                    Я согласен на обработку персональных данных в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ
+                  </label>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="pp__check">
+            <div class="pp-check pp-check_c">
+              <div class="pp-check__checkbox">
+                <div class="check">
+                  <input class="styled-checkbox" id="donate-agree2" value="" name="donate_checkbox2" type="checkbox">
+                  <label for="donate-agree2"></label>
+                </div>
+              </div>
+              <div class="pp-check__text">
+                <span>
+                  <label for="donate-agree2">
+                    Я согласен с <a href="#">условиями размещения информации, изображений, объектов авторского права и иных результатов интеллектуальной деятельности</a>
+                  </label>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="pp__check">
+            <div class="pp-check pp-check_c">
+              <div class="pp-check__checkbox">
+                <div class="check">
+                  <input class="styled-checkbox" id="donate-agree3" value="" name="donate_checkbox3" type="checkbox">
+                  <label for="donate-agree3"></label>
+                </div>
+              </div>
+              <div class="pp-check__text">
+                <span>
+                  <label for="donate-agree3">
+                    Принимаю условия <a href="#">договора оферты</a>
+                  </label>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-green donate__link partner__link popup__btn donate-popup__btn">
+          Отправить
+          <svg class="">
+            <use xlink:href="img/sprite.svg#arrow_right"></use>
+          </svg>
+        </button>
+        <div class="donate-popup__unsub">
+          Чтобы отписаться от рекурентных платежей <a href="#">заполните анкету</a>, и наш модератор отпишет вас в течение рабочего дня.
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+    </div>
 
     <footer class="footer">
   <div class="container">

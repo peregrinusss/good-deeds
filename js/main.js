@@ -222,6 +222,7 @@ if (swiperEvent) {
   const workSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](swiperEvent, {
     slidesPerView: 1,
     spaceBetween: 20,
+    loop: true,
     // Navigation arrows
     navigation: {
       nextEl: ".event__next",
@@ -245,6 +246,7 @@ if (swiperOther) {
   const workSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](swiperOther, {
     slidesPerView: 1,
     spaceBetween: 20,
+    loop: true,
     // Navigation arrows
     navigation: {
       nextEl: ".event__next",
@@ -275,7 +277,7 @@ if (swiperCollect) {
       enabled: true
     },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.col-slider-pagination',
       type: 'bullets'
     },
     slidesPerView: 1.1,
@@ -16280,6 +16282,7 @@ class GraphModal {
 
 // ---------- CODE --------------
 const modalFund = new GraphModal('fund-modal');
+const modalDonate = new GraphModal('donate-modal');
 $(document).ready(function () {
   $('#hist-table').DataTable({
     responsive: true,
@@ -16418,7 +16421,8 @@ $("#fund-form").validate({
       required: true
     },
     fund_org: {
-      required: true
+      required: true,
+      email: true
     },
     fund_vk: {
       required: true,
@@ -16460,10 +16464,52 @@ $("#fund-form").validate({
     enter_checkbox2: {
       required: "Вы должны подтвердить"
     }
+  }
+});
+$("#donate-form").validate({
+  errorElement: "div",
+  ignore: ":hidden",
+  rules: {
+    donate_filter: {
+      required: true
+    },
+    donate_emal: {
+      required: true,
+      email: true
+    },
+    donate_name: {
+      required: true
+    },
+    donate_amount: {
+      required: true
+    },
+    donate_amount_other: {
+      required: true
+    },
+    donate_checkbox1: {
+      required: true
+    },
+    donate_checkbox2: {
+      required: true
+    },
+    donate_checkbox3: {
+      required: true
+    }
+  },
+  messages: {
+    donate_checkbox1: {
+      required: "Вы должны подтвердить"
+    },
+    donate_checkbox2: {
+      required: "Вы должны подтвердить"
+    },
+    donate_checkbox3: {
+      required: "Вы должны подтвердить"
+    }
   },
   submitHandler: function (form) {
     new GraphModal().open('success');
-    const moderatePopup = document.querySelector('.fund-popup');
+    const moderatePopup = document.querySelector('.donate-popup');
     moderatePopup.classList.remove('graph-modal-open', 'fade', 'animate-open');
   }
 });
@@ -16472,6 +16518,32 @@ $.extend($.validator.messages, {
   url: "Введите корретную ссылку",
   equalTo: "Пароли должны совпадать"
 });
+const donateCheckboxMonth = document.querySelector('#donate-2');
+if (donateCheckboxMonth) {
+  const donateCheckboxes = document.querySelectorAll('.donate-popup__checkbox');
+  donateCheckboxes.forEach(donateCheckbox => {
+    donateCheckbox.addEventListener('change', () => {
+      if (donateCheckboxMonth.checked) {
+        $('.donate-popup__month').slideDown(300);
+      } else {
+        $('.donate-popup__month').slideUp(300);
+      }
+    });
+  });
+}
+const donateAmountCustom = document.querySelector('#donate_amount9');
+if (donateAmountCustom) {
+  const donateAmountCheckboxes = document.querySelectorAll('.donate-popup__amount');
+  donateAmountCheckboxes.forEach(donateAmountCheckbox => {
+    donateAmountCheckbox.addEventListener('change', () => {
+      if (donateAmountCustom.checked) {
+        $('.donate-popup__amount--other').slideDown(300);
+      } else {
+        $('.donate-popup__amount--other').slideUp(300);
+      }
+    });
+  });
+}
 
 
 // ---------- CODE --------------

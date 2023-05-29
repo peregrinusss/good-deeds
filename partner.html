@@ -339,6 +339,7 @@
             <h5 class="fund-popup-ava__title">Логотип фонда</h5>
             <div class="fund-popup-ava__wrap">
               <div class="upload__area js-upload-widget" data-size="5">
+                <input type="hidden" name="actionItemAuthorImg" value="">
                 <img class="upload__area_img" src="img/icons/upload.svg" alt="">
                 <span class="upload__area_text">
                   Перетащите фото в это поле иливыберите файл
@@ -353,13 +354,12 @@
                       position: absolute;
                       right: 0px;
                       top: 0px;
-                      font-family: Arial;
-                      font-size: 118px;
                       margin: 0px;
                       padding: 0px;
                       cursor: pointer;
                       opacity: 0;
                       height: 100%;
+                      width: 100%;
                     ">
                 </div>
                 <div class="image-box image-preview js-upload-widget-preview" style="background-image: url()"></div>
@@ -396,7 +396,7 @@
                 <input type="radio" name="col_filter" id="filter-3" value="3">
                 <label for="filter-3">Нематериальная помощь</label>
             </div>
-        </div>
+          </div>
         </div>
         <div class="popup__item">
           <h4 class="popup-h4">Контактное лицо</h4>
