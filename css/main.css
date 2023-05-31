@@ -5155,6 +5155,9 @@ p {
     margin-top: 18px;
   }
 }
+.popup__textarea-full textarea {
+  height: 160px !important;
+}
 
 .popup__grid {
   margin-top: 24px;

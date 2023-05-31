@@ -200,7 +200,6 @@
             </a>
           </div>
           <div class="partner__body">
-            <h2 class="section-title help__title">Все фонды-партнёры</h2>
             <div class="partner__filters">
               <div class="partner__filter active" data-filter="all">все </div>
               <div class="partner__filter" data-filter="children">дети</div>
@@ -333,7 +332,10 @@
             <input type="text" name="fund_name" placeholder="Название организации">
           </div>
           <div class="popup__textarea">
-            <textarea type="text" name="fund_desc" placeholder="Описание фонда"></textarea>
+            <textarea type="text" name="fund_desc_short" placeholder="Краткое описание фонда"></textarea>
+          </div>
+          <div class="popup__textarea popup__textarea-full">
+            <textarea type="text" name="fund_desc_long" placeholder="Описание фонда"></textarea>
           </div>
           <div class="fund-popup-ava info__cover_upload info__cover_upload_ava input-file-ava">
             <h5 class="fund-popup-ava__title">Логотип фонда</h5>
@@ -365,7 +367,7 @@
                 <div class="image-box image-preview js-upload-widget-preview" style="background-image: url()"></div>
               </div>
               <div class="fund-popup-ava__text">
-                <p>Желательный размер не более 200×200 px, не более 1 Мб.</p>
+                <p>Желательный размер не более 200×200 px, не более 2 Мб.</p>
                 <p>Допустимые форматы изображения: JPG, GIF, PNG.</p>
                 <p>Важно! На фото не должно быть надписей и водяных знаков.</p>
               </div>
@@ -385,15 +387,15 @@
           <h4 class="popup-h4">Категория помощи</h4>
           <div class="categories-box" id="col_filter">
             <div class="categories-box__item">
-                <input type="radio" name="col_filter" checked id="filter-1" value="1">
+                <input type="checkbox" name="col_filter" id="filter-1" value="1">
                 <label for="filter-1">Сбор средств</label>
             </div>
             <div class="categories-box__item">
-                <input type="radio" name="col_filter" id="filter-2" value="2">
+                <input type="checkbox" name="col_filter" id="filter-2" value="2">
                 <label for="filter-2">Сбор вещей</label>
             </div>
             <div class="categories-box__item">
-                <input type="radio" name="col_filter" id="filter-3" value="3">
+                <input type="checkbox" name="col_filter" id="filter-3" value="3">
                 <label for="filter-3">Нематериальная помощь</label>
             </div>
           </div>
@@ -408,7 +410,7 @@
               <input type="text" name="fund_tel" placeholder="+7 (999) 999-99-99" id="fund-tel">
             </div>
             <div class="popup__input">
-              <input type="text" name="fund_org" placeholder="Название организации">
+              <input type="text" name="fund_org" placeholder="Email">
             </div>
           </div>
         </div>

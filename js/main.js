@@ -16396,7 +16396,11 @@ $("#fund-form").validate({
     fund_name: {
       required: true
     },
-    fund_desc: {
+    fund_desc_short: {
+      required: true,
+      maxlength: 50
+    },
+    fund_desc_long: {
       required: true
     },
     reg_file: {
@@ -16424,26 +16428,6 @@ $("#fund-form").validate({
       required: true,
       email: true
     },
-    fund_vk: {
-      required: true,
-      url: true
-    },
-    fund_facebook: {
-      required: true,
-      url: true
-    },
-    fund_insta: {
-      required: true,
-      url: true
-    },
-    fund_classmates: {
-      required: true,
-      url: true
-    },
-    fund_site: {
-      required: true,
-      url: true
-    },
     fund_INN: {
       required: true
     },
@@ -16464,6 +16448,11 @@ $("#fund-form").validate({
     enter_checkbox2: {
       required: "Вы должны подтвердить"
     }
+  },
+  submitHandler: function (form) {
+    new GraphModal().open('success');
+    const moderatePopup = document.querySelector('.fund-popup');
+    moderatePopup.classList.remove('graph-modal-open', 'fade', 'animate-open');
   }
 });
 $("#donate-form").validate({
@@ -16506,17 +16495,14 @@ $("#donate-form").validate({
     donate_checkbox3: {
       required: "Вы должны подтвердить"
     }
-  },
-  submitHandler: function (form) {
-    new GraphModal().open('success');
-    const moderatePopup = document.querySelector('.donate-popup');
-    moderatePopup.classList.remove('graph-modal-open', 'fade', 'animate-open');
   }
 });
 $.extend($.validator.messages, {
   required: "Это поле необходимо заполнить.",
   url: "Введите корретную ссылку",
-  equalTo: "Пароли должны совпадать"
+  equalTo: "Пароли должны совпадать",
+  extension: "Недопустимое разрешение файла",
+  maxlength: jQuery.validator.format("Введите не больше {0} символов.")
 });
 const donateCheckboxMonth = document.querySelector('#donate-2');
 if (donateCheckboxMonth) {
