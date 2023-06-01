@@ -246,6 +246,7 @@ if (swiperOther) {
   const workSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"](swiperOther, {
     slidesPerView: 1,
     spaceBetween: 20,
+    slidesPerGroup: 1,
     loop: true,
     // Navigation arrows
     navigation: {
@@ -257,10 +258,12 @@ if (swiperOther) {
       type: 'bullets'
     },
     breakpoints: {
+      560: {
+        slidesPerView: 2
+      },
       768: {
-        slidesPerView: 2,
-        slidesPerGroup: 1,
-        spaceBetween: 30
+        spaceBetween: 20,
+        slidesPerView: 3
       },
       1367: {
         slidesPerView: 3,
@@ -16296,7 +16299,7 @@ $(document).ready(function () {
 // Offset height
 const stockAutors = document.querySelectorAll('.stock__authors');
 const stockTitle = document.querySelectorAll('.stock__title');
-if (window.innerWidth > 768) {
+if (window.innerWidth > 560) {
   if (stockAutors.length != 0) {
     let height = 0;
     let curHeight;
