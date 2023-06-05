@@ -12,6 +12,13 @@
   <title>Добрые дела</title>
   <link rel="stylesheet" href="css/vendor.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/jquery.validate.js"></script>
+  <script defer src="js/jq-inputmask.min.js"></script>
+  <script defer src="js/datatables.js"></script>
+  <script defer src="js/graph-modal.min.js"></script>
+  <script defer src="js/fslightbox.js"></script>
+  <script defer src="js/croppie.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
 
@@ -184,7 +191,7 @@
       <section class="partner">
         <div class="container">
           <div class="donate__head">
-            <h1 class="first-section__title partner__title">
+            <h1 class="first-section__title">
               Фонды-партнёры
             </h1>
             <span>
@@ -198,6 +205,42 @@
                 <use xlink:href="img/sprite.svg#arrow_right"></use>
               </svg>
             </a>
+          </div>
+          <div class="fund-popup-ava info__cover_upload info__cover_upload_ava input-file-ava">
+            <h5 class="fund-popup-ava__title">Логотип фонда</h5>
+            <div class="fund-popup-ava__wrap">
+              <div class="upload__area js-upload-widget" data-size="5">
+                <input type="hidden" name="actionItemAuthorImg" value="">
+                <img class="upload__area_img" src="img/icons/upload.svg" alt="">
+                <span class="upload__area_text">
+                  Перетащите фото в это поле иливыберите файл
+                  с вашего компьютера
+                </span>
+                <div class="inner-div js-upload-widget-button" style="
+                    position: relative;
+                    overflow: hidden;
+                    direction: ltr;
+                  ">
+                  <input title="Выберите файл" type="file" id="reg_file" accept=".png, .jpg, .jpeg" name="reg_file" style="
+                      position: absolute;
+                      right: 0px;
+                      top: 0px;
+                      margin: 0px;
+                      padding: 0px;
+                      cursor: pointer;
+                      opacity: 0;
+                      height: 100%;
+                      width: 100%;
+                    ">
+                </div>
+                <div class="image-box image-preview js-upload-widget-preview" style="background-image: url()"></div>
+              </div>
+              <div class="fund-popup-ava__text">
+                <p>Желательный размер не более 200×200 px, не более 2 Мб.</p>
+                <p>Допустимые форматы изображения: JPG, GIF, PNG.</p>
+                <p>Важно! На фото не должно быть надписей и водяных знаков.</p>
+              </div>
+            </div>
           </div>
           <div class="partner__body">
             <div class="partner__filters">
@@ -337,7 +380,7 @@
           <div class="popup__textarea popup__textarea-full">
             <textarea type="text" name="fund_desc_long" placeholder="Описание фонда"></textarea>
           </div>
-          <div class="fund-popup-ava info__cover_upload info__cover_upload_ava input-file-ava">
+          <!-- <div class="fund-popup-ava info__cover_upload info__cover_upload_ava input-file-ava">
             <h5 class="fund-popup-ava__title">Логотип фонда</h5>
             <div class="fund-popup-ava__wrap">
               <div class="upload__area js-upload-widget" data-size="5">
@@ -372,7 +415,7 @@
                 <p>Важно! На фото не должно быть надписей и водяных знаков.</p>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="popup__input">
             <input type="text" name="fund_aim" placeholder="Цель фонда">
           </div>

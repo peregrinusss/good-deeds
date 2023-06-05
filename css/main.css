@@ -81,7 +81,6 @@ h6 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  overflow-x: hidden;
 }
 
 .main {
@@ -4438,6 +4437,7 @@ p {
 }
 
 .request__slide {
+  display: block;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -5639,4 +5639,83 @@ button {
 }
 .donate-popup__unsub a {
   text-decoration: underline;
+}
+
+.report {
+  margin-top: 42px;
+}
+
+.report__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 450px;
+  margin-top: 24px;
+}
+
+.report__item {
+  display: block;
+  padding: 20px 16px;
+  border: 1px solid #F1F1F1;
+}
+
+.report__item:hover .report__text {
+  opacity: 0.6;
+}
+
+.report__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: #000000;
+  position: relative;
+  padding-left: 44px;
+  transition: all 0.2s;
+}
+
+.report__text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  width: 20px;
+  height: 25px;
+  background: url('../img/icons/report.svg') no-repeat;
+  background-size: 20px 25px;
+}
+
+
+
+@media (max-width: 1366px) {
+  .report {
+    margin-top: 70px;
+  }
+  .report__text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .report {
+    margin-top: 110px;
+  }
+  .report__items {
+    margin-top: 20px;
+  }
+  .report__text {
+    font-size: 12px;
+  }
+}
+
+.special-video__poster {
+  border-radius: 30px;
+}
+
+.partner .first-section__title {
+  color: #000000;
+}
+
+.partner__body {
+  margin-top: 100px;
 }
